@@ -10,7 +10,7 @@ spec:
     path: deployment
   destination:
     server: https://kubernetes.default.svc
-    namespace: user-asicard
+    namespace: user-vgraillat
   syncPolicy:
     automated:
       selfHeal: true
