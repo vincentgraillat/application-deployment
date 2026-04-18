@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rfpop-service
+  namespace: user-vgraillat
 spec:
   selector:
     app: rfpop-app
