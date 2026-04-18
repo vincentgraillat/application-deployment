@@ -6,7 +6,7 @@ resources:
   - service.yaml
   - ingress.yaml
 
-namespace: user-asicard
+namespace: user-vgraillat
 
 patches:
   - target:
@@ -15,7 +15,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/rules/0/host
-        value: rfpop-asicard.user.lab.sspcloud.fr
+        value: rfpop-vgraillat.user.lab.sspcloud.fr
       - op: replace
         path: /spec/tls/0/hosts/0
-        value: rfpop-asicard.user.lab.sspcloud.fr
+        value: rfpop-vgraillat.user.lab.sspcloud.fr

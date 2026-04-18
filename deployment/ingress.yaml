@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: rfpop-ingress
   annotations:
-    # Switch to onyxia to match the working cluster configuration
     kubernetes.io/ingress.class: onyxia
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-origin: "*"
@@ -14,7 +13,6 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
     nginx.ingress.kubernetes.io/websocket-services: "rfpop-service"
 spec:
-  # Updated class name
   ingressClassName: onyxia
   tls:
     - hosts:
