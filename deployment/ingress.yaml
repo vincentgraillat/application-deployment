@@ -3,9 +3,7 @@ kind: Ingress
 metadata:
   name: rfpop-ingress
   annotations:
-    kubernetes.io/ingress.class: onyxia
-    nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "*"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://rfpop-vgraillat.user.lab.sspcloud.fr" 
     nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
     nginx.ingress.kubernetes.io/cors-allow-headers: "Authorization, Content-Type"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
