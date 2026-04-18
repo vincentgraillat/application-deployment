@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rfpop-app
-          image: audricms/r-fpop-change-points-detection:v.0.0.1
+          image: audricms/r-fpop-change-points-detection:v.0.0.2
           imagePullPolicy: Always
           ports:
             - containerPort: 8501
