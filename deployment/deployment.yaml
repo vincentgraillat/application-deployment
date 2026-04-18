@@ -30,7 +30,7 @@ spec:
               memory: "1Gi"
           env:
             - name: PUBLIC_DATA_URL
-              value: "https://minio.lab.sspcloud.fr/asicard/MPPDS%20-%20Projet"
+              value: "https://minio.lab.sspcloud.fr/asicard/MPPDS - Projet"
           readinessProbe:
             httpGet:
               path: /_stcore/health
