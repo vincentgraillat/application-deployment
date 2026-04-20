@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rfpop-app
-          image: audricms/r-fpop-change-points-detection:v1.0.2
+          image: audricms/r-fpop-change-points-detection:v1.0.3
           imagePullPolicy: Always
           ports:
             - containerPort: 8501
@@ -33,6 +33,8 @@ spec:
               value: "asicard"
             - name: S3_PREFIX
               value: "MPPDS-Project"
+            - name: VAULT_PATH
+              value: "vgraillat/MPPDS"
           readinessProbe:
             httpGet:
               path: /_stcore/health
