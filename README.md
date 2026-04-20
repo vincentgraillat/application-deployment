@@ -22,7 +22,7 @@ ArgoCD runs inside the SSPCloud cluster and continuously reconciles the cluster 
 2. Whenever a commit lands on `main`, ArgoCD detects the drift and applies the updated manifests to namespace `user-vgraillat`.
 3. `syncPolicy.automated` is enabled with `selfHeal: true` (reverts manual `kubectl` edits) and `prune: true` (removes resources deleted from this repo).
 
-The Docker image is not built here. The application repo ([MLOps-Bringing-Data-Science-to-Production](https://github.com/vincentgraillat/MLOps-Bringing-Data-Science-to-Production)) handles image builds via GitHub Actions. Pushing a `v*.*.*` git tag triggers the workflow and pushes a versioned image to Docker Hub. Updating the image tag in `deployment/deployment.yaml` here is what closes the loop with ArgoCD.
+The Docker image is not built here. The application repo ([R-FPOP-Change-Points-Detection](https://github.com/audricms/R-FPOP-Change-Points-Detection)) handles image builds via GitHub Actions. Pushing a `v*.*.*` git tag triggers the workflow and pushes a versioned image to Docker Hub. Updating the image tag in `deployment/deployment.yaml` here is what closes the loop with ArgoCD.
 
 ## Full GitOps Flow
 
