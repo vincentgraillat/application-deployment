@@ -32,7 +32,7 @@ spec:
             - name: S3_BUCKET
               value: "asicard"
             - name: S3_PREFIX
-              value: "MPPDS - Projet"
+              value: "MPPDS-Projet"
           readinessProbe:
             httpGet:
               path: /_stcore/health
